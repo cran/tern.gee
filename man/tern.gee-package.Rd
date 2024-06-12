@@ -11,17 +11,18 @@ Create tables and graphs for GEE model fits.
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://insightsengineering.github.io/tern.gee/}
   \item \url{https://github.com/insightsengineering/tern.gee/}
   \item Report bugs at \url{https://github.com/insightsengineering/tern.gee/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Daniel Sabanés Bové \email{daniel.sabanes_bove@roche.com}
+\strong{Maintainer}: Joe Zhu \email{joe.zhu@roche.com}
 
 Authors:
 \itemize{
-  \item Joe Zhu \email{joe.zhu@roche.com}
+  \item Daniel Sabanés Bové \email{daniel@rconis.com}
   \item Emily de la Rua \email{emily.de_la_rua@contractors.roche.com}
 }
 
