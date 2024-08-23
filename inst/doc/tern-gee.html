@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2024-06-12" />
+<meta name="date" content="2024-08-23" />
 
 <title>Introduction to tern.gee</title>
 
@@ -1578,7 +1578,7 @@ border-radius: 0px;
 
 
 <h1 class="title toc-ignore">Introduction to tern.gee</h1>
-<h4 class="date">2024-06-12</h4>
+<h4 class="date">2024-08-23</h4>
 
 </div>
 
@@ -1638,6 +1638,7 @@ adjusting for baseline covariates.</p>
 <span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a><span class="co">#&gt; 4 PT1     VIS4   TRT   Black or African American Fema…    25.3  20.5           0</span></span>
 <span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a><span class="co">#&gt; 5 PT2     VIS1   PBO   Asian                     Male     45.0  NA            NA</span></span>
 <span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a><span class="co">#&gt; 6 PT2     VIS2   PBO   Asian                     Male     45.0  31.5           1</span></span></code></pre></div>
+<p>tern-gee.R</p>
 </div>
 <div id="model-fitting" class="section level3">
 <h3>Model Fitting</h3>
@@ -1689,6 +1690,7 @@ options.</p>
 <span id="cb2-38"><a href="#cb2-38" tabindex="-1"></a><span class="co">#&gt; [6]  0.006795836</span></span>
 <span id="cb2-39"><a href="#cb2-39" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb2-40"><a href="#cb2-40" tabindex="-1"></a><span class="co">#&gt; Number of clusters:   197   Maximum cluster size: 4</span></span></code></pre></div>
+<p>tern-gee.R</p>
 <p>The resulting object consists of many pieces of information
 pertaining to the model such as the estimated coefficients, correlation
 parameters, etc. Additionally, the <code>lsmeans()</code> function from
@@ -1697,11 +1699,12 @@ from any GEE model created using <code>fit_gee()</code>.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>fev_lsmeans <span class="ot">&lt;-</span> <span class="fu">lsmeans</span>(fev_fit, <span class="at">data =</span> fev_data)</span>
 <span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>fev_lsmeans</span>
 <span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="co">#&gt;   ARMCD  prop_est prop_est_se prop_lower_cl prop_upper_cl   n   or_est</span></span>
-<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co">#&gt; 1   PBO 0.9054200  0.01904206     0.8609409     0.9367178 420       NA</span></span>
-<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">#&gt; 2   TRT 0.9527634  0.01193578     0.9230409     0.9713629 380 2.106958</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co">#&gt; 1   PBO 0.9054200  0.01904206     0.8608217     0.9367768 420       NA</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">#&gt; 2   TRT 0.9527634  0.01193578     0.9229565     0.9713959 380 2.106958</span></span>
 <span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="co">#&gt;   or_lower_cl or_upper_cl log_or_est log_or_lower_cl log_or_upper_cl conf_level</span></span>
 <span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="co">#&gt; 1          NA          NA         NA              NA              NA       0.95</span></span>
-<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="co">#&gt; 2    1.127384    3.937677  0.7452453       0.1198996        1.370591       0.95</span></span></code></pre></div>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="co">#&gt; 2    1.125774    3.943307  0.7452453        0.118471         1.37202       0.95</span></span></code></pre></div>
+<p>tern-gee.R</p>
 <p>Based on the output, there is evidence to support that treatment
 leads to an increase in FEV1 over placebo. The GEE model can be refined
 by using different correlation structures and weighting schemes.</p>
@@ -1734,6 +1737,7 @@ package</a>.</p>
 <span id="cb4-18"><a href="#cb4-18" tabindex="-1"></a><span class="co">#&gt;   95% CI                                       (1.13, 3.94)</span></span>
 <span id="cb4-19"><a href="#cb4-19" tabindex="-1"></a><span class="co">#&gt; Log Odds Ratio                                     0.75    </span></span>
 <span id="cb4-20"><a href="#cb4-20" tabindex="-1"></a><span class="co">#&gt;   95% CI                                       (0.12, 1.37)</span></span></code></pre></div>
+<p>tern-gee.R</p>
 <p>First we create a table <code>fev_counts</code> to get the number of
 unique subjects receiving each treatment. These counts are displayed in
 the header of the table under each of the column names by specifying

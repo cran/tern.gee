@@ -1,3 +1,7 @@
+# tern.gee 0.1.5
+
+* Up version `emmeans` package version to 1.10.4.
+
 # tern.gee 0.1.4
 
 * Change package maintainer to Joe Zhu.

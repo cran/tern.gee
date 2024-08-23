@@ -1,10 +1,10 @@
-87b6653ad6ce3e2c1b1d0cf29cabbc48 *DESCRIPTION
+e68fc28ccbcfe81f3f91480889360702 *DESCRIPTION
 438d62962e2da9378d638b62a7411dbe *NAMESPACE
-c0ba722c75cb2016de5aec76c3077896 *NEWS.md
+225ef994e60b70ca0ff073a2f55e1230 *NEWS.md
 01a12b817dae3d4c7fa1eb75aabb0acb *R/data.R
 111c8faa442cd05f4512f24e0a6ce1e2 *R/fit_gee.R
 4c9dd53e3580a45326b8be1541e41517 *R/gee_methods.R
-32a35349edf23d6c9755de5a26003c54 *R/lsmeans.R
+806ac48cfd3fcfddd6f8c68e2aaaaadd *R/lsmeans.R
 26774768e86e003891e5cba71a2bafb4 *R/package.R
 83c9aaa435484788f8e9a4c14d6f0cf9 *R/tabulate_gee.R
 c091fd9fb60417b374d699109c652ed9 *build/vignette.rds
@@ -12,11 +12,11 @@ b1e7df3f76c0339f5da9c6405a49705d *data/fev_data.rda
 5466c357dde64c680e8d8ab3fb97b079 *inst/WORDLIST
 76d15a66b5d7c17502e8b6bc3b65c471 *inst/doc/tern-gee.R
 d61b5f5cc89ded6d4700f052093595e1 *inst/doc/tern-gee.Rmd
-b9e9d52216afec9a242d5f45fa23841c *inst/doc/tern-gee.html
+ca6aec6b5e1f2b6133a7ae929c0a30c7 *inst/doc/tern-gee.html
 7faf6a189456e3a5f4a4acc9be205735 *man/fev_data.Rd
 31f3bdf3fede69ab50c3233abe24a794 *man/fit_gee.Rd
 ba1ab6962331a2cdda3818deae6876c0 *man/gee_methods.Rd
-9f62bc3105b74ff8c6cab967b771177b *man/lsmeans.Rd
+5c58a09d24ceaa2d56143bc66f1e5b37 *man/lsmeans.Rd
 08c019e9650669682a70d9122f9e55e8 *man/reexports.Rd
 45014a1e7063e56ef3d5e041508badb3 *man/tabulate_gee.Rd
 cee89c4dd0e0714a44ad7605e5f2f935 *man/tern.gee-package.Rd
